@@ -32,6 +32,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("Signature"),
@@ -132,6 +133,7 @@ class _MyAppState extends State<MyApp> {
         decoration: BoxDecoration(
           border: Border.all(),
           color: Colors.white30,
+          borderRadius: BorderRadius.circular(10),
         ),
         child: ValueListenableBuilder<ByteData?>(
           valueListenable: rawImage,
@@ -159,6 +161,7 @@ class _MyAppState extends State<MyApp> {
         decoration: BoxDecoration(
           border: Border.all(),
           color: Colors.white30,
+          borderRadius: BorderRadius.circular(10),
         ),
         child: ValueListenableBuilder<ByteData?>(
           valueListenable: rawImageFit,
@@ -186,6 +189,7 @@ class _MyAppState extends State<MyApp> {
         decoration: BoxDecoration(
           border: Border.all(),
           color: Colors.white30,
+          borderRadius: BorderRadius.circular(10),
         ),
         child: ValueListenableBuilder<String?>(
           valueListenable: svg,
